@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <link rel="shortcut icon" href="./assets/icons/speech-bubble.png" type="image/svg" />
+  <title>Week_12_third_task</title>
+</head>
+<body>
+  <div class="comment-container">
+    <div class="comment-form">
+      <h2 class="comment-form__title">Оставьте комментарий</h2>
+      <div class="comment-form__input-group">
+        <i class="comment-form__icon comment-form__icon--user"></i>
+        <input class="comment-form__input" type="text" id="name" placeholder="Ваше имя" required />
+      </div>
+      <div class="comment-form__input-group">
+        <i class="comment-form__icon comment-form__icon--image"></i>
+        <input class="comment-form__input" type="text" id="avatar" placeholder="Ссылка на аватар" required />
+      </div>
+      <div class="comment-form__input-group">
+        <i class="comment-form__icon comment-form__icon--message"></i>
+        <textarea class="comment-form__textarea" id="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+      </div>
+      <button class="comment-form__button" onclick="addComment()">Добавить комментарий</button>
+    </div>
+
+    <div class="comments-section">
+      <h2 class="comments-section__title">Комментарии</h2>
+      <!-- сюда будут добавляться новые комментарии -->
+    </div>
+  </div>
+  <script src="./assets/JS/index.js"></script>
+</body>
+</html>
