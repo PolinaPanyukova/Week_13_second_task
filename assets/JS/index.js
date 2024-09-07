@@ -7,7 +7,7 @@
 //функция антиспам с двумя значениями
 function checkSpam(str) {
     const lowerStr = str.toLowerCase();
-    return lowerStr.replace(/viagra|xxx/gi, '***');
+    return lowerStr.replace(/viagra|xxx/g, '***');
 }
 
 function getRandomAvatar() {
